@@ -1,0 +1,234 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html{
+    font-size: 14px;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+body{
+    color: black;
+    background-color: rgba(0, 255, 255, 0.281);
+}
+.container{
+    width: 100%;
+    height: 100vh;
+}
+.navbar{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: row;
+    padding: 10px;
+background-color: rgb(0, 0, 0);
+position: sticky;
+z-index: 100;
+top: 0;
+height: fit-content;
+
+}
+.container .navbar ul {
+    list-style: none;
+    
+}
+.container .navbar ul li{
+   padding: 15px 20px;
+   border-radius: 5px;
+   float: left;
+}
+.container .navbar ul li:hover{
+    background-color: aliceblue;
+}
+.container .navbar ul li:hover a{
+    background-color: aliceblue;
+    color: black;
+}
+.container .navbar ul li a{
+    text-decoration: none;
+    color: white;
+    display: block;
+    text-transform: capitalize;
+}
+.container .navbar .logo-and-menu{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    /* width: 100%; */
+    /* border: 1px solid white!important; */
+    
+}
+
+.container .navbar .logo-and-menu .menu .fa-bars{
+color: white!important;
+font-size: 20px!important;
+display: none!important;
+}
+.container .navbar .logo-and-menu .logo{
+    color: white;
+    margin-right: auto;
+
+}
+/* end of navigation */
+.about-us{
+    padding: 20px 0px ;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.about-us .about-us-img-and-info{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    grid-template-rows: 300px;
+    gap: 20px;
+   justify-content: center;
+   align-content: center;
+}
+.about-us .about-us-img-and-info .about-img{
+    width: 100%;
+    max-width: 300px;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 10px;
+    
+}  
+.about-us .about-us-img-and-info .about-info{
+    width: 100%;
+    max-width: 300px;
+/* padding: 20px; */
+    justify-self: center;
+}  
+.about-us .about-us-img-and-info .about-info p{
+   text-align: justify;
+   font-size: .9rem;
+    
+}  
+.about-us .about-us-img-and-info .about-info q{
+   text-align: center!important;
+   font-size: .9rem;
+   display: block;
+   margin-top: 2em;
+   font-style: italic;  
+   font-weight: 500;  
+}  
+.services{
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+/* card */
+.card{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 250px;
+    text-align: justify;
+    border: 1px solid ;
+    padding: 10px;
+    line-break: anywhere;
+    margin-top: 10px;
+    height:auto;
+    border-radius: 2px;
+    order: 4;
+    background-color: rgba(0, 183, 255, 0.667);
+}
+.card .card-title{
+    order:2;
+}
+.card .card-img{
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    margin: 10px 0;
+    order: 1;
+}
+.card .card-link{
+    color: rgb(3, 62, 85);
+    text-decoration: none;
+    align-self: flex-start;
+    padding: 10px 0;
+    font-weight: 600;
+    text-transform: capitalize;
+    font-size: 0.9rem;
+    order: 4;
+}
+.card .card-info{
+    font-size: 0.7rem;
+    font-weight: 500;
+    order: 3;
+}
+.container .services h2{
+    text-align: center;
+    margin: 20px 0;
+    text-transform: uppercase;
+}
+.container .services .service-row{
+    display: grid;
+    grid-template-columns: repeat(6,1fr);
+   grid-template-rows: auto;
+    gap: 10px;
+
+}
+@media screen and (max-width:600px) {
+    .container .navbar{
+       
+        justify-content: space-between;
+        align-items: flex-start;
+        flex-direction: column;
+        width: 100%;
+    }
+    .container .navbar ul {
+        /* width: 100%; */
+        display: none;
+       width: 100%;
+       text-align: center;
+       margin-top: 10px;
+    }
+    .container .navbar ul li{
+        float:none;
+
+    }
+   
+    .container .navbar ul li a{
+        text-decoration: none;
+
+    }
+    .container .navbar .logo-and-menu  {
+       width: 100%;
+    }
+    .container .navbar .logo-and-menu .menu .fa-bars{
+       /* margin-left: auto!important; */
+       display: block!important;
+    }
+/* end of navigation */
+
+/* main content */
+.about-us{
+    width: 100%;
+    padding: 20px;
+}
+.container .about-us .about-us-img-and-info{
+    grid-template-columns: repeat(1,1fr);
+}
+.container .about-us .about-us-img-and-info .about-img{
+    max-width: 100%;
+    padding: 10px;
+}
+.container .about-us .about-us-img-and-info .about-info{
+  max-width: 90%;  
+}
+.container .services .service-row{
+    grid-template-columns: repeat(2,50%)
+
+
+}
+.container .services .card{
+    /* width: 80%; */
+    margin: 0 auto;
+    
+}
+}
