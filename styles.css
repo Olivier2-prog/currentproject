@@ -24,7 +24,8 @@ body{
     flex-direction: row;
     padding: 10px;
 background-color: rgb(0, 0, 0);
-position: sticky;
+position: fixed;
+width: 100%;
 z-index: 100;
 top: 0;
 height: fit-content;
@@ -219,6 +220,8 @@ line-break: loose;
         align-items: flex-start;
         flex-direction: column;
         width: 100%;
+        position:fixed;
+        top:0;
     }
     .container .navbar ul {
         /* width: 100%; */
@@ -258,6 +261,8 @@ line-break: loose;
         align-items: flex-start;
         flex-direction: column;
         width: 100%;
+        position:fixed;
+        top:0;
     }
     .container .navbar ul {
         /* width: 100%; */
