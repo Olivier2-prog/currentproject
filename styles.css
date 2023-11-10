@@ -12,10 +12,11 @@ scroll-behavior: smooth;
 body{
     color: black;
     background-color: rgba(0, 255, 255, 0.281);
+    border: 3px solid black;
 }
 .container{
     width: 100%;
-    height: 100vh;
+    height: 100%;
 }
 .navbar{
     display: flex;
@@ -23,12 +24,14 @@ body{
     align-items: center;
     flex-direction: row;
     padding: 10px;
-background-color: rgb(0, 0, 0);
+   
+background-color: rgba(0, 0, 0, 0.703);
 position: fixed;
 width: 100%;
 z-index: 100;
 top: 0;
 height: fit-content;
+
 
 }
 .container .navbar ul {
@@ -75,9 +78,9 @@ display: none!important;
 /* end of navigation */
 /* main content */
 .container .hero{
- margin: 0 auto;   
+ margin: 10% auto 0px auto;   
  width: 80%;
- height: 100vh;
+ /* height: 100vh; */
  display: flex;
  flex-direction: column;
  align-items: center;
@@ -121,7 +124,7 @@ text-align: center;
 font-size: 1.2rem;
 font-weight: 500;
 border-radius: 5px;
-transition: all 10ms ease-in-out 10ms;
+transition: background-color 0.5s;
 
 }
 .container .hero .btn a{
@@ -170,7 +173,7 @@ transition: all 10ms ease-in-out 10ms;
     overflow: hidden;
     margin: 10px 0;
     height: fit-content;
-
+-webkit-transition: background-color 1s, color 2s;
 }
 .card:hover{
     background-color: black;
@@ -195,8 +198,12 @@ line-break: loose;
 .container .services{
     width: 90%;
     margin: 0px auto;
-    height: 100vh;
+    /* height: 100vh; */
     
+}
+.container .products{
+height: 100vh;
+width: 100%;
 }
 /* @media screen and (max-width:960px) {
  
@@ -206,7 +213,38 @@ line-break: loose;
 .row{
     grid-template-columns: repeat(4,1fr);
 }
+.container .footer{
+    background-color: rgba(0, 0, 0, 0.703);
+   color: rgba(255, 255, 255, 0.872);
+   padding: 10px;
 
+}
+.container .footer .footer-title{
+    background-color: rgba(0, 0, 0, 0.893);
+   color: rgba(255, 255, 255, 0.872);
+   padding: 10px;
+   text-transform: capitalize;
+
+}
+.container .footer .footer-column ul{
+    list-style: none;
+    
+}
+.container .footer .footer-column ul li{
+    list-style: none;
+    margin: 10px 0;
+}
+.container .footer .footer-column ul li a{
+    color: white;
+    text-decoration: none;
+    cursor: pointer;
+    
+}
+.container .footer .footer-column .fa-home,.container .footer .footer-column .fa-envelope,.container .footer .footer-column .fa-phone{
+    color: white!important;
+    font-size: 20px!important;
+    margin-right: 10px;
+}
 @media screen and (max-width:960px) {
     .row{
         grid-template-columns: repeat(3,1fr);
