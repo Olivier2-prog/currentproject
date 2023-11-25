@@ -1,124 +1,289 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Barberiser</title>
-    <link rel="stylesheet" href="styles.css" />
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
-  </head>
-  <body>
-    <div class="container">
-      <nav class="navbar">
-        <div class="logo-and-menu">
-          <div class="logo">Barberizer</div>
-          <div class="menu" onclick="show()">
-            <i class="fa fa-bars" ></i>
-          </div>
-        </div>
-        <ul class="nav-list" id="list">
-          <li class="nav-list-item">
-            <a href="#home" class="nav-link">Home</a>
-          </li>
-          <li class="nav-list-item">
-            <a href="#" class="nav-link">About</a>
-          </li>
-          <li class="nav-list-item">
-            <a href="#serv" class="nav-link">services</a>
-          </li>
-          <li class="nav-list-item">
-            <a href="#" class="nav-link">Products</a>
-          </li>
-          <li class="nav-list-item">
-            <a href="#" class="nav-link">Blog</a>
-          </li>
-          <li class="nav-list-item">
-            <a href="#" class="nav-link">Contacts</a>
-          </li>
-        </ul>
-      </nav>
-<!-- main content -->
-<section class="hero" >
-  <h1 class="title" id="home">welcome to <span class="company-name">barberiser</span></h1>
-  <p class="text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Illum repudiandae facere repellendus iure, perspiciatis est iste hic ipsam dolorem doloremque, voluptas quis sit at veniam? Dolores explicabo sit sunt id!
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Barberizer</title>
+    <link rel="stylesheet" href="/CSS/styles.css">
+</head>
+<body>
+   <div class="container">
+    <nav>
+        <h1 class="logo">barberizer</h1>
     
-  </p>
-  <button class="btn "><a href="#">Start Now </a></button>
+        <ul id="list" class="d-none">
+            <li><a href="">Home |</a></li>
+            <li><a href="">About |</a></li>
+            <li><a href="">Blog |</a></li>
+            <li><a href="">Contact |</a></li>
+        </ul>
+    
+    <div class="humberg" onclick="showMenu()">
+        <span class="bar"></span>
+        <span class="bar"></span>
+        <span class="bar"></span>
+    </div>
+    
+    </nav>
+    <!-- end of menu -->
+
+    <!-- main content -->
+<section class="hero">
+   <div>
+    <h1 class="hero-title"> welcome to 
+        <span>Barberizer</span>
+    </h1>
+    <p class="hero-sub-title">
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Asperiores autem nobis deserunt, nulla ullam, aliquam quasi provident delectus iure, eum commodi repellat excepturi sit neque? Deserunt sit nemo non error vero nam, quisquam recusandae, repudiandae aperiam consectetur culpa velit facilis?
+    </p>
+    <button class="hero-btn"><a href="#" >Learn More..</a></button>
+   </div>
 </section>
-<!-- service section -->
 <section class="services">
-  <h2 class="sub-title" id="serv">
-    our services
-  </h2>
-  <div class="row">
-    <div class="card">
-      <img src="./images/Braid0.jpg" class="card-icon"></img>
-      <p class="card-name">Hair Braiding</p>
-      <p class="card-information">Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde sint fugiat incidunt maxime dicta quam, commodi placeat adipisci </p>
+    <div class="title-and-sub-title">
+        <h2 class="services-title">
+Our services
+        </h2>
+        <p class="services-sub-title">
+            Lorem ipsum dolor sit amet consectetur, adipisicing elit. <br>Accusantium cum eius incidunt assumenda voluptatem officia omnis consectetur consequatur cumque ut.
+        </p>
     </div>
-    <div class="card">
-      <img src="./images/nailpolishing.jpg" class="card-icon"></img>
-      <p class="card-name">Nail Polishing</p>
-      <p class="card-information">Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde sint fugiat incidunt maxime dicta quam, commodi placeat adipisci </p>
+
+    <div class="row">
+      <!-- service -->
+      <div class="service-card">
+        <div class="service-card-img">
+            <img src="/images/tattooing.jpg" alt="">
+        </div>
+        <div class="service-card-detail">
+Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat sunt culpa quidem tempora nihil laudantium dignissimos, 
+        </div>
+        <div class="service-card-feed-back">
+            <div class="like">like</div>
+            <div class="dislike">dislike</div>
+            <div class="comment">comment</div>
+
+        </div>
+        <div class="service-name">tattooing</div>
     </div>
-    <div class="card">
-      <img src="./images/tattooing.jpg" class="card-icon"></img>
-      <p class="card-name">Tattoing</p>
-      <p class="card-information">Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde sint fugiat incidunt maxime dicta quam, commodi placeat adipisci </p>
+   
+      <!-- end of service -->
+      <!-- service -->
+      <div class="service-card">
+        <div class="service-card-img">
+            <img src="/images/massage.jpg" alt="">
+        </div>
+        <div class="service-card-detail">
+Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat sunt culpa quidem tempora nihil laudantium dignissimos, 
+        </div>
+        <div class="service-card-feed-back">
+            <div class="like">like</div>
+            <div class="dislike">dislike</div>
+            <div class="comment">comment</div>
+
+        </div>
+        <div class="service-name">Massaging</div>
     </div>
-    <div class="card">
-      <img src="./images/massage.jpg" class="card-icon"></img>
-      <p class="card-name">Massage</p>
-      <p class="card-information">Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde sint fugiat incidunt maxime dicta quam, commodi placeat adipisci </p>
+   
+      <!-- end of service -->
+      <!-- service -->
+      <div class="service-card">
+        <div class="service-card-img">
+            <img src="/images/nailcutting.jpg" alt="">
+        </div>
+        <div class="service-card-detail">
+Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat sunt culpa quidem tempora nihil laudantium dignissimos, 
+        </div>
+        <div class="service-card-feed-back">
+            <div class="like">like</div>
+            <div class="dislike">dislike</div>
+            <div class="comment">comment</div>
+
+        </div>
+        <div class="service-name">nail cutting</div>
     </div>
-    <div class="card">
-      <img src="./images/nailcutting.jpg" class="card-icon"></img>
-      <p class="card-name">Nail Cutting</p>
-      <p class="card-information">Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde sint fugiat incidunt maxime dicta quam, commodi placeat adipisci </p>
+   
+      <!-- end of service -->
+      <!-- service -->
+      <div class="service-card">
+        <div class="service-card-img">
+            <img src="/images/nailpolishing.jpg" alt="">
+        </div>
+        <div class="service-card-detail">
+Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat sunt culpa quidem tempora nihil laudantium dignissimos, 
+        </div>
+        <div class="service-card-feed-back">
+            <div class="like">like</div>
+            <div class="dislike">dislike</div>
+            <div class="comment">comment</div>
+
+        </div>
+        <div class="service-name">nail polishing</div>
     </div>
-    <div class="card">
-      <img src="./images/nailpolishing.jpg" class="card-icon"></img>
-      <p class="card-name">Nail Polishing</p>
-      <p class="card-information">Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde sint fugiat incidunt maxime dicta quam, commodi placeat adipisci </p>
+   
+      <!-- end of service -->
+      <!-- service -->
+      <div class="service-card">
+        <div class="service-card-img">
+            <img src="/images/braid.jpg" alt="">
+        </div>
+        <div class="service-card-detail">
+Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat sunt culpa quidem tempora nihil laudantium dignissimos, 
+        </div>
+        <div class="service-card-feed-back">
+            <div class="like">like</div>
+            <div class="dislike">dislike</div>
+            <div class="comment">comment</div>
+
+        </div>
+        <div class="service-name">Hair styling</div>
     </div>
-  </div>
+   
+      <!-- end of service -->
+      <!-- service -->
+      <div class="service-card">
+        <div class="service-card-img">
+            <img src="/images/Braid0.jpg" alt="">
+        </div>
+        <div class="service-card-detail">
+Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat sunt culpa quidem tempora nihil laudantium dignissimos, 
+        </div>
+        <div class="service-card-feed-back">
+            <div class="like">like</div>
+            <div class="dislike">dislike</div>
+            <div class="comment">comment</div>
+
+        </div>
+        <div class="service-name">Hair Braiding</div>
+    </div>
+   
+      <!-- end of service -->
+    </div>
 </section>
-<!-- footer -->
-<footer class="footer">
-<div class="row">
-  <div class="footer-column">
-    <h4 class="footer-title">Barberiser</h4>
-    <p class="text">
-      Lorem ipsum dolor sit, amet consectetur adipisicing elit. Cumque voluptatem sed cupiditate nostrum porro exercitationem, minima voluptas facilis debitis modi error commodi aliquid natus aut quod sit dolorem provident aperiam.
-    </p>
-  </div>
-  <div class="footer-column">
-    <h4 class="footer-title">Products</h4>
-    <p class="text">
-      Lorem ipsum dolor sit, amet consectetur adipisicing elit. Cumque voluptatem sed cupiditate nostrum porro exercitationem, minima voluptas facilis debitis modi error commodi aliquid natus aut quod sit dolorem provident aperiam.
-    </p>
-  </div>
-
-  <div class="footer-column">
-    <h4 class="footer-title">contacts</h4>
-    <ul>
-      <li><a href="#"><i class="fa fa-home"></i>Gasabo-Kigali-Rwanda</a></li>
-      <li><a href="#"><i class="fa fa-phone"></i>+250789097329</a></li>
-      <li><a href="#"><i class="fa fa-envelope"></i>cyuzuzokwizeraolivier2@gmail.com</a></li>
-      <li><a href="#"><i class="fa fa"></i></a></li>
-    </ul>
-  </div>
-  <div class="footer-column">
-    <h4 class="footer-title">Follow Us</h4>
-    <p class="text">
-      Lorem ipsum dolor sit, amet consectetur adipisicing elit. Cumque voluptatem sed cupiditate nostrum porro exercitationem, minima voluptas facilis debitis modi error commodi aliquid natus aut quod sit dolorem provident aperiam.
-    </p>
-  </div>
-</div>
-
-</footer>
+<section class="services">
+    <div class="title-and-sub-title">
+        <h2 class="services-title">
+Our Products
+        </h2>
+        <p class="services-sub-title">
+            Lorem ipsum dolor sit amet consectetur, adipisicing elit. <br>Accusantium cum eius incidunt assumenda voluptatem officia omnis consectetur consequatur cumque ut.
+        </p>
     </div>
 
-    <script src="main.js"></script>
-  </body>
+    <div class="row">
+      <!-- service -->
+      <div class="service-card">
+        <div class="service-card-img">
+            <img src="/images/tattooing.jpg" alt="">
+        </div>
+        <div class="service-card-detail">
+Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat sunt culpa quidem tempora nihil laudantium dignissimos, 
+        </div>
+        <div class="service-card-feed-back">
+            <div class="like">like</div>
+            <div class="dislike">dislike</div>
+            <div class="comment">comment</div>
+
+        </div>
+        <div class="service-name">tattooing</div>
+    </div>
+   
+      <!-- end of service -->
+      <!-- service -->
+      <div class="service-card">
+        <div class="service-card-img">
+            <img src="/images/massage.jpg" alt="">
+        </div>
+        <div class="service-card-detail">
+Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat sunt culpa quidem tempora nihil laudantium dignissimos, 
+        </div>
+        <div class="service-card-feed-back">
+            <div class="like">like</div>
+            <div class="dislike">dislike</div>
+            <div class="comment">comment</div>
+
+        </div>
+        <div class="service-name">Massaging</div>
+    </div>
+   
+      <!-- end of service -->
+      <!-- service -->
+      <div class="service-card">
+        <div class="service-card-img">
+            <img src="/images/nailcutting.jpg" alt="">
+        </div>
+        <div class="service-card-detail">
+Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat sunt culpa quidem tempora nihil laudantium dignissimos, 
+        </div>
+        <div class="service-card-feed-back">
+            <div class="like">like</div>
+            <div class="dislike">dislike</div>
+            <div class="comment">comment</div>
+
+        </div>
+        <div class="service-name">nail cutting</div>
+    </div>
+   
+      <!-- end of service -->
+      <!-- service -->
+      <div class="service-card">
+        <div class="service-card-img">
+            <img src="/images/nailpolishing.jpg" alt="">
+        </div>
+        <div class="service-card-detail">
+Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat sunt culpa quidem tempora nihil laudantium dignissimos, 
+        </div>
+        <div class="service-card-feed-back">
+            <div class="like">like</div>
+            <div class="dislike">dislike</div>
+            <div class="comment">comment</div>
+
+        </div>
+        <div class="service-name">nail polishing</div>
+    </div>
+   
+      <!-- end of service -->
+      <!-- service -->
+      <div class="service-card">
+        <div class="service-card-img">
+            <img src="/images/braid.jpg" alt="">
+        </div>
+        <div class="service-card-detail">
+Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat sunt culpa quidem tempora nihil laudantium dignissimos, 
+        </div>
+        <div class="service-card-feed-back">
+            <div class="like">like</div>
+            <div class="dislike">dislike</div>
+            <div class="comment">comment</div>
+
+        </div>
+        <div class="service-name">Hair styling</div>
+    </div>
+   
+      <!-- end of service -->
+      <!-- service -->
+      <div class="service-card">
+        <div class="service-card-img">
+            <img src="/images/Braid0.jpg" alt="">
+        </div>
+        <div class="service-card-detail">
+Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat sunt culpa quidem tempora nihil laudantium dignissimos, 
+        </div>
+        <div class="service-card-feed-back">
+            <div class="like">like</div>
+            <div class="dislike">dislike</div>
+            <div class="comment">comment</div>
+
+        </div>
+        <div class="service-name">Hair Braiding</div>
+    </div>
+   
+      <!-- end of service -->
+    </div>
+</section>
+
+   </div>
+    <script src="/JS/main.js"></script>
+</body>
+
 </html>
