@@ -5,19 +5,21 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Barberizer</title>
     <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 <body>
    <div class="container">
+  <header>
     <nav>
         <h1 class="logo">barberizer</h1>
     
         <ul id="list" class="d-none">
-            <li><a href="">Home </a></li>
-            <li><a href="">About </a></li>
-            <li><a href="">services </a></li>
-            <li><a href="">Products </a></li>
-            <li><a href="">Blog </a></li>
-            <li><a href="">Contact </a></li>
+            <li><a href="#Home">Home </a></li>
+            <li><a href="#About">About </a></li>
+            <li><a href="#Services">services </a></li>
+            <li><a href="#Products">Products </a></li>
+            <li><a href="#Blog ">Blog </a></li>
+            <li><a href="#Contact">Contact </a></li>
         </ul>
     
     <div class="humberg" onclick="showMenu()">
@@ -27,10 +29,11 @@
     </div>
     
     </nav>
+  </header>
     <!-- end of menu -->
 
     <!-- main content -->
-<section class="hero">
+<section class="hero" id="Home">
    <div>
     <h1 class="hero-title"> welcome to 
         <span>Barberizer</span>
@@ -41,7 +44,7 @@
     <button class="hero-btn"><a href="#" >Learn More..</a></button>
    </div>
 </section>
-<section class="services">
+<section class="services" id="Services">
     <div class="title-and-sub-title">
         <h2 class="services-title">
 Our services
@@ -61,9 +64,9 @@ Our services
 Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat sunt culpa quidem tempora nihil laudantium dignissimos, 
         </div>
         <div class="service-card-feed-back">
-            <div class="like">like</div>
-            <div class="dislike">dislike</div>
-            <div class="comment">comment</div>
+            <div class="like"><i class="fa fa-thumbs-o-up" ></i></div>
+            <div class="dislike"><i class="fa fa-thumbs-o-down" ></i></div>
+            <div class="comment"><i class="fa fa-comment-o" ></i></div>
 
         </div>
         <div class="service-name">tattooing</div>
@@ -73,7 +76,7 @@ Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat sunt culpa quide
      
     </div>
 </section>
-<section class="services">
+<section class="services" id="Products">
     <div class="title-and-sub-title">
         <h2 class="services-title">
 Our Products
@@ -87,18 +90,18 @@ Our Products
       <!-- service -->
       <div class="service-card">
         <div class="service-card-img">
-            <img src="images/tattooing.jpg" alt="">
+            <img src="images/nailcutting.jpg" alt="Person cutting nail">
         </div>
         <div class="service-card-detail">
 Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat sunt culpa quidem tempora nihil laudantium dignissimos, 
         </div>
         <div class="service-card-feed-back">
-            <div class="like">like</div>
-            <div class="dislike">dislike</div>
-            <div class="comment">comment</div>
+            <div class="like"><i class="fa fa-thumbs-o-up" ></i></div>
+            <div class="dislike" ><i class="fa fa-thumbs-o-down" title="like"></i></div>
+            <div class="comment"><i class="fa fa-comment-o" ></i></div>
 
         </div>
-        <div class="service-name">tattooing</div>
+        <div class="service-name">nail cutting</div>
     </div>
    
       <!-- end of service -->

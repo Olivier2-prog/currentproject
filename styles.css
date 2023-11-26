@@ -28,6 +28,13 @@ body {
   margin: 0 auto;
   height: 100%;
 }
+.container header{
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 100;
+}
 nav {
   width: 100%;
   padding: 10px 20px;
@@ -194,6 +201,7 @@ nav .humberg .bar {
   position: absolute;
   z-index: 100;
   font-size: 1.3rem;
+  z-index: 1;
 
   left: 0;
   top: 0;
